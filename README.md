@@ -21,8 +21,9 @@ If we missed something, feel free to hit us up on Slack.
 5. `pip3 install -r requirements.txt` in codeBuffalo/django_graphql_movies/
 6. If you face errors (a common one seems to be mysql_config not found; see https://stackoverflow.com/questions/7475223/mysql-config-not-found-when-installing-mysqldb-python-interface) they will unfortunately have to be fixed before moving on haha. Depending on your OS and environment the steps will vary. 
 7. If the install completes without errors, woohoo! If not, step 6
+8. Run `python manage.py runserver` from the directory containing manage.py
 8. Go to the URL specified in the terminal (https://127.0.0.1:8000)
 9. Enter the query in GraphiQL:
 `mutation{showActivities(activities: "<Insert twitter handle>"){activities}}`
 The twitter handle can belong to anybody, remove the angle brackets
-The twitter API is slightly finnicky, so in case it returns an error we return output based off of a subsection of text from
+The twitter API is slightly finnicky, so in case it returns an error we return output based off of a random subsection of text. 
